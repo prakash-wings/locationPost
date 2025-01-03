@@ -29,3 +29,16 @@ exports.locationPost = async(req,res) =>{
 
     }
 }
+
+
+
+exports.getLocations = async(req,res)=>{
+    try {
+        const locations = await locationModel.find();
+        res.status(200).json(locations);
+      } catch (error) {
+        console.error('Error retrieving location data:', error);
+        res.status(500).json({ error: 'Internal server error' });
+      }
+    
+}
