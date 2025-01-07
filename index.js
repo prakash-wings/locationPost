@@ -18,7 +18,7 @@ const locationRoute = require("./routes/locationRoutes")
 
 app.use("/api/v1" , locationRoute);
 
-app.listen(process.env.PORT,(req,res)=>{
+app.listen(4000,(req,res)=>{
     console.log(`Server has been started on port number ${PORT}`)
 })
 
