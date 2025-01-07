@@ -19,7 +19,8 @@ const locationRoute = require("./routes/locationRoutes")
 app.use("/api/v1" , locationRoute);
 
 app.listen(4000,(req,res)=>{
-    console.log(`Server has been started on port number ${PORT}`)
+    console.log(`Server has been started on port number 4000`)
+
 })
 
 
